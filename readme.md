@@ -28,6 +28,7 @@ gcloud services enable storage.googleapis.com iam.googleapis.com dataproc.google
 
 ## 2) Create bucket + service account (Terraform)
 Copy the example tfvars and edit it:
+
 ```bash
 cp terraform/envs/dev/terraform.tfvars.example terraform/envs/dev/terraform.tfvars
 ```

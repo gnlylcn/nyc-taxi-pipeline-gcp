@@ -1,7 +1,6 @@
 from pyspark.sql import functions as F
 
 def with_trip_id(df):
-    # Deterministic trip_id from stable business columns (stringified).
     cols = [
         F.col("tpep_pickup_datetime").cast("string"),
         F.col("tpep_dropoff_datetime").cast("string"),

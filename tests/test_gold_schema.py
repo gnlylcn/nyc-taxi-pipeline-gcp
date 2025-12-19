@@ -3,7 +3,6 @@ from pyspark.sql import functions as F
 
 
 def test_gold_fact_trips_columns(spark, tmp_path):
-    # Build minimal bronze-like input
     bronze_rows = [
         Row(
             trip_id="x",
